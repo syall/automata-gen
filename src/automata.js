@@ -130,8 +130,8 @@ function sleep(milliseconds) {
 (async function main() {
 	console.log('Loading...');
 	const rules = process.argv[2]
-		? rulesParser(process.argv[2])
-		: rulesParser('default.txt');
+		? rulesParser(`rules/${process.argv[2]}`)
+		: rulesParser('rules/default.txt');
 	let mainGrid = generateGrid({ random: true });
 	let running = true, change = false;
 	while (running) {
