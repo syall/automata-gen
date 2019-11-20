@@ -122,17 +122,22 @@ function checkRules(rules, n, prev) {
 	return prev;
 }
 
-console.log('Loading...');
-let mainGrid = generateGrid({ random: true });
-let change = false;
-const rules = process.argv[2]
-	? rulesParser(process.argv[2])
-	: rulesParser('default.txt');
+function sleep(milliseconds) {
+	return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
 
-printGrid(mainGrid);
-const loop = setInterval(() => {
-	[mainGrid, change] = updateGrid(mainGrid, rules);
-	printGrid(mainGrid);
-	if (!change || iteration > maxIterations)
-		process.exit();
-}, 100);
+(async function main() {
+	console.log('Loading...');
+	let mainGrid = generateGrid({ random: true });
+	let change = false;
+	const rules = process.argv[2]
+		? rulesParser(process.argv[2])
+		: rulesParser('default.txt');
+	for (; ;) {
+		printGrid(mainGrid);
+		[mainGrid, change] = updateGrid(mainGrid, rules);
+		if (!change || iteration > maxIterations)
+			process.exit();
+		await sleep(100);
+	}
+})();
