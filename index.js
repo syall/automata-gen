@@ -128,16 +128,16 @@ function sleep(milliseconds) {
 
 (async function main() {
 	console.log('Loading...');
-	let mainGrid = generateGrid({ random: true });
-	let change = false;
 	const rules = process.argv[2]
 		? rulesParser(process.argv[2])
 		: rulesParser('default.txt');
-	for (; ;) {
+	let mainGrid = generateGrid({ random: true });
+	let running = true, change = false;
+	while (running) {
 		printGrid(mainGrid);
 		[mainGrid, change] = updateGrid(mainGrid, rules);
-		if (!change || iteration > maxIterations)
-			process.exit();
+		running = change && iteration < maxIterations;
 		await sleep(100);
 	}
+	process.exit();
 })();
