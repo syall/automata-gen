@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/syall/gol",
   "author": "syall <s.yuan.all@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
 }
