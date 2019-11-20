@@ -5,6 +5,7 @@
 const rows = process.argv[3] || 30;
 const cols = process.argv[4] || 30;
 const maxIterations = 500;
+let iteration = 0;
 
 function rulesParser(path) {
 	const fs = require('fs');
@@ -66,7 +67,6 @@ function randomInRange(low, high) {
 	return Math.floor(Math.random() * (high - low + 1)) + low;
 }
 
-let iteration = 0;
 function printGrid(grid) {
 	console.clear();
 	console.log(`Iteration: ${iteration++}`);
