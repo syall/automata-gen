@@ -4,6 +4,7 @@
 
 const rows = process.argv[3] || 30;
 const cols = process.argv[4] || 30;
+const stepMs = 100;
 const maxIterations = 500;
 let iteration = 0;
 
@@ -88,18 +89,18 @@ function updateGrid(grid, rules) {
 	return [tempGrid, change];
 }
 
-const directions = [
-	[+0, +1],
-	[+1, +1],
-	[+1, +0],
-	[+1, -1],
-	[+0, -1],
-	[-1, -1],
-	[-1, +0],
-	[-1, +1],
-];
 function getNeighbors(grid, r, c) {
 	let count = 0;
+	const directions = [
+		[+0, +1],
+		[+1, +1],
+		[+1, +0],
+		[+1, -1],
+		[+0, -1],
+		[-1, -1],
+		[-1, +0],
+		[-1, +1],
+	];
 	directions.forEach(([offX, offY]) => {
 		const newR = r + offX;
 		const newC = c + offY;
@@ -137,7 +138,7 @@ function sleep(milliseconds) {
 		printGrid(mainGrid);
 		[mainGrid, change] = updateGrid(mainGrid, rules);
 		running = change && iteration < maxIterations;
-		await sleep(100);
+		await sleep(stepMs);
 	}
 	process.exit();
 })();
