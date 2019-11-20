@@ -2,11 +2,15 @@
   "name": "gol",
   "version": "1.0.0",
   "description": "game of life",
-  "main": "index.js",
+  "main": "automata.js",
   "repository": "https://github.com/syall/gol",
   "author": "syall <s.yuan.all@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/automata.js",
+    "docs": "jsdoc -c jsdocs.json"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.3"
   }
 }
