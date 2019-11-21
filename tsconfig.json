@@ -1,9 +1,12 @@
 {
-	"compilerOptions": {
-		"outDir": "./dist",
-		"target": "es2018"
-	},
-	"include": [
-		"./src/**/*"
-	]
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "es2015",
+    "declaration": true,
+    "outDir": "./dist",
+    "esModuleInterop": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }

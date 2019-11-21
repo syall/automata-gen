@@ -127,7 +127,7 @@ function sleep(milliseconds) {
 	return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
-(async function main() {
+async function main() {
 	console.log('Loading...');
 	const rules = process.argv[2]
 		? rulesParser(`rules/${process.argv[2]}`)
@@ -142,4 +142,6 @@ function sleep(milliseconds) {
 		await sleep(stepMs);
 	}
 	process.exit();
-})();
+}
+
+main();

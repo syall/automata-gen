@@ -1,12 +1,14 @@
 {
-  "name": "gol",
+  "name": "automatagen",
   "version": "1.0.0",
-  "description": "game of life",
-  "main": "automata.js",
+  "description": "Generate Cellular Automata based on customized rules",
+  "main": "dist/automata.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/syall/gol",
   "author": "syall <s.yuan.all@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepublish": "tsc",
     "start": "ts-node src/automata.ts",
     "build": "tsc",
     "test": "true",
