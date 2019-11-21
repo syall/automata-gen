@@ -45,7 +45,7 @@ function rulesParser(path) {
 	return parsed;
 }
 
-function generateGrid(options) {
+function generateGrid(options = {}) {
 	const opts = {
 		random: false,
 		low: 0,
@@ -86,7 +86,7 @@ function updateGrid(grid, rules) {
 				change = true;
 		}
 	}
-	return [tempGrid, change];
+	return { mainGrid: tempGrid, change };
 }
 
 function getNeighbors(grid, r, c) {
@@ -133,10 +133,11 @@ function sleep(milliseconds) {
 		? rulesParser(`rules/${process.argv[2]}`)
 		: rulesParser('rules/default.txt');
 	let mainGrid = generateGrid({ random: true });
-	let running = true, change = false;
+	let running = true;
 	while (running) {
 		printGrid(mainGrid);
-		[mainGrid, change] = updateGrid(mainGrid, rules);
+		const { mainGrid: tempGrid, change } = updateGrid(mainGrid, rules);
+		mainGrid = tempGrid;
 		running = change && iteration < maxIterations;
 		await sleep(stepMs);
 	}

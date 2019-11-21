@@ -3,7 +3,7 @@
 		"include": [
 			"src"
 		],
-		"includePattern": ".js$",
+		"includePattern": ".ts$",
 		"excludePattern": "(node_modules/|docs)"
 	},
 	"plugins": [

@@ -7,10 +7,15 @@
   "author": "syall <s.yuan.all@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/automata.js",
+    "start": "ts-node src/automata.ts",
+    "build": "tsc",
+    "test": "true",
     "docs": "jsdoc -c jsdocs.json"
   },
   "devDependencies": {
-    "jsdoc": "^3.6.3"
+    "jsdoc": "^3.6.3",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2",
+    "@types/node": "^12.12.11"
   }
 }
