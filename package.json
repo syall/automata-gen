@@ -12,12 +12,12 @@
     "start": "ts-node src/automata.ts",
     "build": "tsc",
     "test": "true",
-    "docs": "jsdoc -c jsdocs.json"
+    "docs": "typedoc --out docs src"
   },
   "devDependencies": {
-    "jsdoc": "^3.6.3",
+    "@types/node": "^12.12.11",
     "ts-node": "^8.5.2",
-    "typescript": "^3.7.2",
-    "@types/node": "^12.12.11"
+    "typedoc": "^0.15.2",
+    "typescript": "^3.7.2"
   }
 }

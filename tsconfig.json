@@ -4,7 +4,10 @@
     "module": "es2015",
     "declaration": true,
     "outDir": "./dist",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "typeRoots": [
+      "node_modules/@types",
+    ]
   },
   "include": [
     "./src/**/*"
@@ -12,5 +15,9 @@
   "exclude": [
     "node_modules",
     "dist"
-  ]
+  ],
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  },
 }
