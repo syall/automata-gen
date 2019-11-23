@@ -1,0 +1,733 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Automata | automata-gen</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">automata-gen</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_automata_.html">&quot;automata&quot;</a>
+				</li>
+				<li>
+					<a href="_automata_.automata.html">Automata</a>
+				</li>
+			</ul>
+			<h1>Class Automata</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Cellular Automata Class containing all logic to update and display the <a href="../modules/_automata_types_.html#grid">Grid</a></p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Automata</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_automata_.automata.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_automata_.automata.html#cols" class="tsd-kind-icon">cols</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_automata_.automata.html#grid" class="tsd-kind-icon">grid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_automata_.automata.html#iteration" class="tsd-kind-icon">iteration</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_automata_.automata.html#maxiterations" class="tsd-kind-icon">max<wbr>Iterations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_automata_.automata.html#msperstep" class="tsd-kind-icon">ms<wbr>Per<wbr>Step</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_automata_.automata.html#rows" class="tsd-kind-icon">rows</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_automata_.automata.html#rules" class="tsd-kind-icon">rules</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_automata_.automata.html#running" class="tsd-kind-icon">running</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_automata_.automata.html#calculatetotalweight" class="tsd-kind-icon">calculate<wbr>Total<wbr>Weight</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_automata_.automata.html#checkrules" class="tsd-kind-icon">check<wbr>Rules</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_automata_.automata.html#generategrid" class="tsd-kind-icon">generate<wbr>Grid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_automata_.automata.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_automata_.automata.html#getrandomcell" class="tsd-kind-icon">get<wbr>Random<wbr>Cell</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_automata_.automata.html#printgrid" class="tsd-kind-icon">print<wbr>Grid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_automata_.automata.html#run" class="tsd-kind-icon">run</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_automata_.automata.html#sleep" class="tsd-kind-icon">sleep</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_automata_.automata.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_automata_.automata.html#updategrid" class="tsd-kind-icon">update<wbr>Grid</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="_automata_.automata.html#defaultcell" class="tsd-kind-icon">default<wbr>Cell</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="_automata_.automata.html#options" class="tsd-kind-icon">options</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Automata<span class="tsd-signature-symbol">(</span>initRules<span class="tsd-signature-symbol">: </span><a href="../interfaces/_automata_types_.initialrules.html" class="tsd-signature-type">InitialRules</a>, stateRules<span class="tsd-signature-symbol">?: </span><a href="../modules/_automata_types_.html#staterules" class="tsd-signature-type">StateRules</a>, runningRules<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_automata_types_.runningrules.html" class="tsd-signature-type">RunningRules</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_automata_.automata.html" class="tsd-signature-type">Automata</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L45">automata.ts:45</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>To create an Automata, provide <a href="../interfaces/_automata_types_.initialrules.html">InitialRules</a>, optional <a href="../modules/_automata_types_.html#staterules">StateRules</a>,
+									and <a href="../interfaces/_automata_types_.runningrules.html">RunningRules</a>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>initRules: <a href="../interfaces/_automata_types_.initialrules.html" class="tsd-signature-type">InitialRules</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> stateRules: <a href="../modules/_automata_types_.html#staterules" class="tsd-signature-type">StateRules</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> runningRules: <a href="../interfaces/_automata_types_.runningrules.html" class="tsd-signature-type">RunningRules</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_automata_.automata.html" class="tsd-signature-type">Automata</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="cols" class="tsd-anchor"></a>
+					<h3>cols</h3>
+					<div class="tsd-signature tsd-kind-icon">cols<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;25</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L28">automata.ts:28</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Number of columns in the <a href="_automata_.automata.html">Automata</a> <a href="../modules/_automata_types_.html#grid">Grid</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="grid" class="tsd-anchor"></a>
+					<h3>grid</h3>
+					<div class="tsd-signature tsd-kind-icon">grid<span class="tsd-signature-symbol">:</span> <a href="../modules/_automata_types_.html#grid" class="tsd-signature-type">Grid</a><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L30">automata.ts:30</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p><a href="../modules/_automata_types_.html#grid">Grid</a> of the Cellular Automata</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="iteration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> iteration</h3>
+					<div class="tsd-signature tsd-kind-icon">iteration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L41">automata.ts:41</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Iteration Number of the Simulation</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="maxiterations" class="tsd-anchor"></a>
+					<h3>max<wbr>Iterations</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Iterations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;500</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L43">automata.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Upper Bound of <a href="_automata_.automata.html#iteration">iteration</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="msperstep" class="tsd-anchor"></a>
+					<h3>ms<wbr>Per<wbr>Step</h3>
+					<div class="tsd-signature tsd-kind-icon">ms<wbr>Per<wbr>Step<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;100</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L39">automata.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Number of milliseconds between updates</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="rows" class="tsd-anchor"></a>
+					<h3>rows</h3>
+					<div class="tsd-signature tsd-kind-icon">rows<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;25</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L26">automata.ts:26</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Number of rows in the<a href="_automata_.automata.html">Automata</a><a href="../modules/_automata_types_.html#grid">Grid</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="rules" class="tsd-anchor"></a>
+					<h3>rules</h3>
+					<div class="tsd-signature tsd-kind-icon">rules<span class="tsd-signature-symbol">:</span> <a href="../modules/_automata_types_.html#rule" class="tsd-signature-type">Rule</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L23">automata.ts:23</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>State Rules of the Cellular Automaton</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="running" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> running</h3>
+					<div class="tsd-signature tsd-kind-icon">running<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L45">automata.ts:45</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether the simulation is running</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="calculatetotalweight" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> calculate<wbr>Total<wbr>Weight</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Total<wbr>Weight<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L81">automata.ts:81</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="checkrules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> check<wbr>Rules</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Rules<span class="tsd-signature-symbol">(</span>nbInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_automata_types_.neighborinfo.html" class="tsd-signature-type">NeighborInfo</a>, prev<span class="tsd-signature-symbol">: </span><a href="../interfaces/_automata_types_.cell.html" class="tsd-signature-type">Cell</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_automata_types_.cell.html" class="tsd-signature-type">Cell</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L149">automata.ts:149</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nbInfo: <a href="../interfaces/_automata_types_.neighborinfo.html" class="tsd-signature-type">NeighborInfo</a></h5>
+								</li>
+								<li>
+									<h5>prev: <a href="../interfaces/_automata_types_.cell.html" class="tsd-signature-type">Cell</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_automata_types_.cell.html" class="tsd-signature-type">Cell</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="generategrid" class="tsd-anchor"></a>
+					<h3>generate<wbr>Grid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Grid<span class="tsd-signature-symbol">(</span>fill<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_automata_types_.html#grid" class="tsd-signature-type">Grid</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L61">automata.ts:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fill: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_automata_types_.html#grid" class="tsd-signature-type">Grid</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getneighbors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Neighbors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Neighbors<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, col<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_automata_types_.neighborinfo.html" class="tsd-signature-type">NeighborInfo</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L113">automata.ts:113</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>col: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_automata_types_.neighborinfo.html" class="tsd-signature-type">NeighborInfo</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getrandomcell" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Random<wbr>Cell</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Random<wbr>Cell<span class="tsd-signature-symbol">(</span>totalWeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_automata_types_.cell.html" class="tsd-signature-type">Cell</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L89">automata.ts:89</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>totalWeight: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_automata_types_.cell.html" class="tsd-signature-type">Cell</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="printgrid" class="tsd-anchor"></a>
+					<h3>print<wbr>Grid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">print<wbr>Grid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L157">automata.ts:157</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="run" class="tsd-anchor"></a>
+					<h3>run</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">run<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L166">automata.ts:166</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="sleep" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> sleep</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">sleep<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L181">automata.ts:181</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sleep Utility Function</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L162">automata.ts:162</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updategrid" class="tsd-anchor"></a>
+					<h3>update<wbr>Grid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Grid<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L102">automata.ts:102</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
+					<a name="defaultcell" class="tsd-anchor"></a>
+					<h3>default<wbr>Cell</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Cell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L33">automata.ts:33</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Default Blank State</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="defaultcell.display" class="tsd-anchor"></a>
+						<h3>display</h3>
+						<div class="tsd-signature tsd-kind-icon">display<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;0&quot;</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L33">automata.ts:33</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="defaultcell.state" class="tsd-anchor"></a>
+						<h3>state</h3>
+						<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L33">automata.ts:33</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L36">automata.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p><a href="../interfaces/_automata_types_.options.html">Options</a></p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="options.random" class="tsd-anchor"></a>
+						<h3>random</h3>
+						<div class="tsd-signature tsd-kind-icon">random<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L36">automata.ts:36</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="options.range" class="tsd-anchor"></a>
+						<h3>range</h3>
+						<div class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[{ cell: this.defaultCell, weight: 1 }]</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/syall/automata-gen/blob/af9bf6b/src/automata.ts#L36">automata.ts:36</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_automata_.html">&quot;automata&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_automata_types_.html">&quot;automata-<wbr>types&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_automata_.automata.html" class="tsd-kind-icon">Automata</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_automata_.automata.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_automata_.automata.html#cols" class="tsd-kind-icon">cols</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_automata_.automata.html#grid" class="tsd-kind-icon">grid</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_automata_.automata.html#iteration" class="tsd-kind-icon">iteration</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_automata_.automata.html#maxiterations" class="tsd-kind-icon">max<wbr>Iterations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_automata_.automata.html#msperstep" class="tsd-kind-icon">ms<wbr>Per<wbr>Step</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_automata_.automata.html#rows" class="tsd-kind-icon">rows</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_automata_.automata.html#rules" class="tsd-kind-icon">rules</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_automata_.automata.html#running" class="tsd-kind-icon">running</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_automata_.automata.html#calculatetotalweight" class="tsd-kind-icon">calculate<wbr>Total<wbr>Weight</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_automata_.automata.html#checkrules" class="tsd-kind-icon">check<wbr>Rules</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_automata_.automata.html#generategrid" class="tsd-kind-icon">generate<wbr>Grid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_automata_.automata.html#getneighbors" class="tsd-kind-icon">get<wbr>Neighbors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_automata_.automata.html#getrandomcell" class="tsd-kind-icon">get<wbr>Random<wbr>Cell</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_automata_.automata.html#printgrid" class="tsd-kind-icon">print<wbr>Grid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_automata_.automata.html#run" class="tsd-kind-icon">run</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_automata_.automata.html#sleep" class="tsd-kind-icon">sleep</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_automata_.automata.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_automata_.automata.html#updategrid" class="tsd-kind-icon">update<wbr>Grid</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
+								<a href="_automata_.automata.html#defaultcell" class="tsd-kind-icon">default<wbr>Cell</a>
+							</li>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
+								<a href="_automata_.automata.html#options" class="tsd-kind-icon">options</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
