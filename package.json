@@ -12,7 +12,7 @@
     "start": "node test.js",
     "build": "tsc",
     "test": "true",
-    "docs": "typedoc --out docs src; touch ./docs/.nojekyll",
+    "docs": "typedoc --out docs src",
     "deploy": "gh-pages -d docs"
   },
   "devDependencies": {

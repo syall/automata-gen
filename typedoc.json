@@ -3,6 +3,5 @@
 	"out": "docs",
 	"includeDeclarations": true,
 	"excludeExternals": true,
-	"hideGenerator": true,
-	"includes": "./.nojekyll"
+	"hideGenerator": true
 }
