@@ -4,7 +4,7 @@
   "description": "Generate Cellular Automata based on customized rules",
   "main": "dist/automata.js",
   "types": "dist/automata-types.d.ts",
-  "repository": "https://github.com/syall/gol",
+  "repository": "https://github.com/syall/automata-gen",
   "author": "syall <s.yuan.all@gmail.com>",
   "license": "MIT",
   "scripts": {
