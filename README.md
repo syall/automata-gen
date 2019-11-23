@@ -1,4 +1,4 @@
-# Cellular Automata Generator
+# automata-gen
 
 ## The "What" of this Package
 

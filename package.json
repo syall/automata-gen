@@ -1,6 +1,6 @@
 {
-  "name": "automatagen",
-  "version": "1.0.0",
+  "name": "automata-gen",
+  "version": "0.0.1",
   "description": "Generate Cellular Automata based on customized rules",
   "main": "dist/automata.js",
   "types": "dist/automata-types.d.ts",
