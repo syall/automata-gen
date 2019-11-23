@@ -1,20 +1,18 @@
 # automata-gen
 
-## The "What" of this Package
+## Content
 
-* Given a Rules object, one can specify how to generate a cellular automata
+automata-gen provides an easy framework ([Automata Class](https://github.com/syall/automata-gen/blob/master/src/automata.ts)) to generate Cellular Automata, including timing, size of the universe, maximum iterations, and more.
 
-* Flexiblity in state as well as displaying characters
-
-* Provides an easy framework to print and update the Cellular Automata, including timing, size of the grid, and maximum iterations
+Features include difference between state and display, hooks to different parts of the running lifecycle, and simple design that requires no dependencies!
 
 ## Motivation
 
 Personally, Cellular Automata are a fascinating subject!
 
-Although there are a lot of academic papers which discuss the various applications of this simple concept, there was no simple way to generalize creating cellular automata.
+Although there are a lot of academic papers which discuss the various applications of this simple concept, there was no simple way to generalize and visualize creating cellular automata.
 
-Although this may not be the most optimal solution, it supports a variety of options that seem helpful instead of having to code all of the special cases.
+It should be noted that the generator is not able to generate every type of cellular automata, particularly cellular automata that involve "direction" of a cell (see Langton's Ant and the like).
 
 ## Installation
 
@@ -30,14 +28,28 @@ or using yarn:
 yarn add automata-gen
 ~~~
 
+## Examples
+
+See the [Examples](https://github.com/syall/automata-gen/tree/master/examples):
+
+* [Conway's Game of Life](https://github.com/syall/automata-gen/blob/master/examples/gameOfLife.ts)
+* [Forest Fire](https://github.com/syall/automata-gen/blob/master/examples/forestFire.ts)
+* [Wire World](https://github.com/syall/automata-gen/blob/master/examples/wireWorld.ts)
+
+## Documentation
+
+Further Documentation is found [here](https://syall.github.io/automata-gen/).
+
 ## Personal Note
 
-Cellular Automata generator is the first package I have ever dared to publish.
+automata-gen is the first package I have felt confident enough to publish!
 
-The culmination of my learning and exposure to the programming community is this package.
+I have been learning how to code in my free time for several months now in addition to my computer science degree.
 
-Many beginner programmers have coded Conway's game of life, and I hope this contribution can help those understand the power of these simple simulations.
+After using so much open source software, this would be my first contribution back to the computer science community.
 
 Thank you,
 
-syall
+[syall](https://github.com/syall)
+
+*P.S.* For those programmers that are coding Conway's Game of Life, you can make much more complex automata then that with this package for very little additional technical complexity.
