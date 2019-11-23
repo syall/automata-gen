@@ -12,7 +12,7 @@ Personally, Cellular Automata are a fascinating subject!
 
 Although there are a lot of academic papers which discuss the various applications of this simple concept, there was no simple way to generalize and visualize creating cellular automata.
 
-It should be noted that the generator is not able to generate every type of cellular automata, particularly cellular automata that involve "direction" of a cell (see Langton's Ant and the like).
+It should be noted that the generator is not able to generate every type of cellular automata, particularly cellular automata that involve "direction" of a cell (see [Langton's Ant](https://rosettacode.org/wiki/Langton%27s_ant) and the like).
 
 ## Installation
 

@@ -47,7 +47,7 @@ export interface Options {
 export interface NeighborState {
 	/** [[Cell]] being counted */
 	cell: Cell;
-	/** Number of the [[Cell]] */
+	/** Number of that type of [[Cell]] */
 	count: number;
 }
 

@@ -22,27 +22,27 @@ export class Automata {
 	/** State Rules of the Cellular Automaton*/
 	public rules: Rule[] = [];
 
-	/** Number of rows in the[[Automata]][[Grid]] */
+	/** Number of rows in the [[Automata]] [[Grid]] */
 	readonly rows: number = 25;
 	/** Number of columns in the [[Automata]] [[Grid]] */
 	readonly cols: number = 25;
 	/** [[Grid]] of the Cellular Automata */
 	public grid: Grid = [];
 
-	/** Default Blank State */
+	/** Default Blank State that can be modified */
 	public defaultCell: Cell = { state: 0, display: '0' };
 
-	/** [[Options]] */
+	/** See [[Options]] for more details */
 	public options: Options = { random: false, range: [{ cell: this.defaultCell, weight: 1 }] };
 
 	/** Number of milliseconds between updates */
 	public msPerStep: number = 100;
 	/** Iteration Number of the Simulation */
 	private iteration: number = 0;
-	/** Upper Bound of [[iteration]] */
+	/** Upper Bound of iteration */
 	public maxIterations: number = 500;
 	/** Whether the simulation is running */
-	private running: boolean = false;
+	public running: boolean = false;
 
 	/**
 	 * To create an Automata, provide [[InitialRules]], optional [[StateRules]],
@@ -58,6 +58,11 @@ export class Automata {
 		this.options = { ...this.options, ...initRules.options };
 	}
 
+	/**
+	 * Generates a [[Grid]] based on [[InitialRules]]
+	 * @param fill Whether to fill based on rules or [[defaultCell]]
+	 * @returns tempGrid which is always decoupled from the Automata Object
+	 */
 	public generateGrid(fill: boolean = true): Grid {
 		const tempGrid: Grid = [];
 		const totalWeight: number = this.calculateTotalWeight();
@@ -78,6 +83,10 @@ export class Automata {
 		return tempGrid;
 	}
 
+	/**
+	 * Helper function that calculates the total Weight from [[InitCell]] Array
+	 * @returns total Sum of all the weights
+	 */
 	private calculateTotalWeight() {
 		let total = 0;
 		const { range } = this.options;
@@ -86,6 +95,12 @@ export class Automata {
 		return total;
 	}
 
+	/**
+	 * Helper function that randomly selects a Cell based on weight from
+	 * [[calculateTotalWeight]]
+	 * @param totalWeight Sum of all the weights
+	 * @returns Cell that falls under the weight's category
+	 */
 	private getRandomCell(totalWeight): Cell {
 		if (totalWeight === 0)
 			return this.defaultCell;
@@ -99,6 +114,9 @@ export class Automata {
 		return this.defaultCell;
 	}
 
+	/**
+	 * Updates the [[Grid]] and iteration
+	 */
 	public updateGrid(): void {
 		const tempGrid: Grid = this.generateGrid(false);
 		for (let row = 0; row < this.rows; row++) {
@@ -110,6 +128,13 @@ export class Automata {
 		this.grid = tempGrid;
 	}
 
+	/**
+	 * Helper Function that calculates total neighbor count as well as
+	 * Type and Quantity of neighbors
+	 * @param row Row of [[Cell]] in Grid
+	 * @param col Column of [[Cell]] in Grid
+	 * @returns Record of Neighbors and Count as well as Total Count
+	 */
 	private getNeighbors(row: number, col: number): NeighborInfo {
 		const record: Record<number | string, NeighborState> = {};
 		let count: number = 0;
@@ -146,6 +171,13 @@ export class Automata {
 		};
 	}
 
+	/**
+	 * Helper Function that Evaluates the [[StateRules]] in order to determine
+	 * the next state of a certain [[Cell]]
+	 * @param [[NeighborInfo]] Record of Neighbors and Total Count
+	 * @param prev [[Cell]] that is being examined
+	 * @returns [[Cell]] to replace prev
+	 */
 	private checkRules(nbInfo: NeighborInfo, prev: Cell): Cell {
 		for (let i = 0; i < this.rules.length; i++) {
 			const status = this.rules[i](nbInfo, prev);
@@ -154,15 +186,21 @@ export class Automata {
 		return prev;
 	}
 
+	/** Prints iteration as well as String Representation of the [[Grid]] */
 	public printGrid(): void {
 		console.log(`Iteration: ${this.iteration}`);
 		console.log(this.toString());
 	};
 
+	/**
+	 * Returns string representation of the [[Grid]]
+	 * @return [[Grid]] in string format
+	 */
 	public toString(): string {
 		return this.grid.map(row => row.map(cell => cell.display).join('')).join('\n');
 	};
 
+	/** Run the simulation based on [[RunningRules]] */
 	public async run(): Promise<void> {
 		this.running = true;
 		console.clear();
