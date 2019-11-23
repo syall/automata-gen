@@ -16,7 +16,7 @@ import {
 /**
  * Cellular Automata Class containing all logic to update and display the [[Grid]]
  */
-class Automata {
+export default class Automata {
 
 	/** State Rules of the Cellular Automaton*/
 	rules: Rule[] = [];
@@ -71,11 +71,11 @@ class Automata {
 // 	for (let row = 0; row < rows; row++) {
 // 		grid.push([]);
 // 		for (let col = 0; col < cols; col++) {
-// 			// TODO: Update logic to include Cell
-// 			// grid[row].push(opts.random
-// 			// 	? randomInRange(opts.low, opts.high)
-// 			// 	: opts.low
-// 			// );
+//			TODO: Update logic to include Cell
+// 			grid[row].push(opts.random
+//				? randomInRange(opts.low, opts.high)
+//				: opts.low
+//			);
 // 		}
 // 	}
 // 	return grid;
@@ -119,22 +119,22 @@ class Automata {
 // 		const newR = r + offX;
 // 		const newC = c + offY;
 // 		if (newR >= 0 && newR < rows && newC >= 0 && newC < cols) {
-// 			// TODO: Update Logic for Cell
-// 			// count = grid[newR][newC] !== 0
-// 			// 	? count + 1
-// 			// 	: count;
+// 			TODO: Update Logic for Cell
+// 			count = grid[newR][newC] !== 0
+// 				? count + 1
+// 				: count;
 // 		}
 // 	});
 // 	return count;
 // }
 
-// // TODO: Update CheckRules after figuring out rules format
+// TODO: Update CheckRules after figuring out rules format
 // function checkRules(rules, n: number, prev: Cell) {
 // 	let status: Cell;
 // 	for (let i = 0; i < rules.length; i++) {
 // 		status = rules[i](n);
-// 		// if (status !== false)
-// 		// 	return status.res;
+// 		if (status !== false)
+// 			return status.res;
 // 	}
 // 	return prev;
 // }
