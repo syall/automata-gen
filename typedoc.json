@@ -1,5 +1,5 @@
 {
-	"mode": "modules",
+	"mode": "file",
 	"out": "docs",
 	"includeDeclarations": true,
 	"excludeExternals": true,

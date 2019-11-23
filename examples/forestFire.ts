@@ -2,7 +2,6 @@
  * Forest Fire
  * https://rosettacode.org/wiki/Forest_fire
  */
-
 (() => {
 	const { Automata } = require('../src/automata');
 
@@ -12,6 +11,8 @@
 	const probabilityBurn: number = 0.001;
 	const probabilityTree: number = 0.01;
 	const initRules = {
+		rows: 10,
+		cols: 40,
 		options: {
 			random: true,
 			range: [

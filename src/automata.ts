@@ -53,7 +53,7 @@ export class Automata {
 		this.msPerStep = runningRules?.msPerStep || this.msPerStep;
 		this.maxIterations = runningRules?.maxIterations || this.maxIterations;
 		this.rows = initRules?.grid?.length || initRules?.rows || this.rows;
-		this.cols = initRules?.grid[0]?.length || initRules?.cols || this.cols;
+		this.cols = initRules?.grid?.length > 0 ? initRules?.grid[0].length : false || initRules?.cols || this.cols;
 		this.grid = initRules?.grid || this.grid;
 		this.options = { ...this.options, ...initRules.options };
 	}

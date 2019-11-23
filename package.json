@@ -14,7 +14,7 @@
     "example:wireWorld": "ts-node examples/wireWorld.ts",
     "build": "tsc",
     "test": "true",
-    "docs": "typedoc --out docs src; cp _config.yml docs;",
+    "docs": "typedoc --out docs src ; cp _config.yml docs;",
     "deploy": "gh-pages -d docs"
   },
   "devDependencies": {

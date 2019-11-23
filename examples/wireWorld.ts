@@ -2,7 +2,6 @@
  * Wire World
  * https://rosettacode.org/wiki/Wireworld
  */
-
 (() => {
 	const { Automata } = require('../src/automata');
 

@@ -2,7 +2,6 @@
  * Conway's Game of Life
  * https://rosettacode.org/wiki/Conway%27s_Game_of_Life
  */
-
 (() => {
 	const { Automata } = require('../src/automata');
 
