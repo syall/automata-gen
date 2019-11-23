@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "prepublish": "tsc",
-    "start": "tsc; node test.js",
+    "start": "node test.js",
     "build": "tsc",
     "test": "true",
     "docs": "typedoc --out docs src"
