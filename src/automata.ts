@@ -53,7 +53,7 @@ export class Automata {
 		this.msPerStep = runningRules?.msPerStep || this.msPerStep;
 		this.maxIterations = runningRules?.maxIterations || this.maxIterations;
 		this.rows = initRules?.grid?.length || initRules?.rows || this.rows;
-		this.cols = initRules?.grid?.length || initRules?.cols || this.cols;
+		this.cols = initRules?.grid[0]?.length || initRules?.cols || this.cols;
 		this.grid = initRules?.grid || this.grid;
 		this.options = { ...this.options, ...initRules.options };
 	}
@@ -148,7 +148,7 @@ export class Automata {
 
 	private checkRules(nbInfo: NeighborInfo, prev: Cell): Cell {
 		for (let i = 0; i < this.rules.length; i++) {
-			const status = this.rules[i](nbInfo);
+			const status = this.rules[i](nbInfo, prev);
 			if (status) return status;
 		}
 		return prev;

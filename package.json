@@ -9,7 +9,9 @@
   "license": "MIT",
   "scripts": {
     "prepublish": "tsc",
-    "start": "node test.js",
+    "example:gameOfLife": "ts-node examples/gameOfLife.ts",
+    "example:forestFire": "ts-node examples/forestFire.ts",
+    "example:wireWorld": "ts-node examples/wireWorld.ts",
     "build": "tsc",
     "test": "true",
     "docs": "typedoc --out docs src; cp _config.yml docs;",

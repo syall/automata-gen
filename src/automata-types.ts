@@ -64,7 +64,7 @@ export interface NeighborInfo {
  * If matched a rule, return a [[Cell]].
  * Otherwise, return false.
  */
-export type Rule = (states: NeighborInfo) => Cell | false;
+export type Rule = (states: NeighborInfo, prev: Cell) => Cell | false;
 
 /**
  * Rules of State Change in the Cellular Automata
