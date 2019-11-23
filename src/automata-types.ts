@@ -7,9 +7,9 @@
  */
 export interface Cell {
 	/** State associated with the Cell */
-	state: String | number;
+	state: string | number;
 	/** Character to display when [[printGrid]] is used */
-	display: String;
+	display: string;
 }
 
 /**
@@ -25,7 +25,7 @@ export interface InitCell {
 	/** [[Cell]] to Initiate with certain probability */
 	cell: Cell;
 	/** Probability of Cell to be initiated */
-	probability: number;
+	weight: number;
 }
 
 /**
@@ -42,16 +42,6 @@ export interface Options {
 }
 
 /**
- * Representation of [[Grid]] that includes a boolean variable to notify change
- */
-export interface GridState {
-	/** Current [[Grid State]] */
-	grid: Grid;
-	/** Determines change of a Grid after [[updateGrid]] (for oscillations and still life) */
-	change: boolean;
-}
-
-/**
  * Neighbor Count of a Particular [[Cell]]
  */
 export interface NeighborState {
@@ -62,16 +52,24 @@ export interface NeighborState {
 }
 
 /**
+ * Wrapper for [[NeighborState]] with total Neighbor Count
+ */
+export interface NeighborInfo {
+	neighbors: Record<number | string, NeighborState>;
+	count: number;
+}
+
+/**
  * Functions that take in [[NeighborState]]s:
  * If matched a rule, return a [[Cell]].
  * Otherwise, return false.
  */
-export type Rule = (states: NeighborState[], prev: Cell) => Cell | false;
+export type Rule = (states: NeighborInfo) => Cell | false;
 
 /**
  * Rules of State Change in the Cellular Automata
  */
-export type StateRules = Rule[]
+export type StateRules = Rule[];
 
 /**
  * Rules for Running the Cellular Automata Simulation
@@ -79,8 +77,6 @@ export type StateRules = Rule[]
 export interface RunningRules {
 	/** Number of milliseconds per [[updateGrid]] */
 	msPerStep?: number;
-	/** Current Iteration */
-	iteration?: number;
 	/** Upper Bound for [[iteration]] */
 	maxIterations?: number;
 }

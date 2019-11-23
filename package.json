@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "prepublish": "tsc",
-    "start": "ts-node src/automata.ts",
+    "start": "tsc; node test.js",
     "build": "tsc",
     "test": "true",
     "docs": "typedoc --out docs src"
