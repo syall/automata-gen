@@ -7,6 +7,7 @@
   "repository": "https://github.com/syall/automata-gen",
   "author": "syall <s.yuan.all@gmail.com>",
   "license": "MIT",
+  "homepage": "https://automata-gen.syall.work",
   "scripts": {
     "prepublish": "tsc",
     "example:gameOfLife": "ts-node examples/gameOfLife.ts",
