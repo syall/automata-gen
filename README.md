@@ -30,7 +30,9 @@ yarn add automata-gen
 
 ## Examples
 
-See the [Examples](https://github.com/syall/automata-gen/tree/master/examples):
+Demo of examples built in a React app can be found [here](https://automata-demo.syall.work/).
+
+The source code of the [Examples](https://github.com/syall/automata-gen/tree/master/examples):
 
 * [Conway's Game of Life](https://github.com/syall/automata-gen/blob/master/examples/gameOfLife.ts)
 * [Forest Fire](https://github.com/syall/automata-gen/blob/master/examples/forestFire.ts)
@@ -38,7 +40,7 @@ See the [Examples](https://github.com/syall/automata-gen/tree/master/examples):
 
 ## Documentation
 
-Further Documentation is found [here](https://syall.github.io/automata-gen/).
+Further Documentation can be found [here](https://syall.github.io/automata-gen/).
 
 ## Personal Note
 
