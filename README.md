@@ -1,6 +1,6 @@
 # automata-gen
 
-## Content
+## Overview
 
 automata-gen provides an easy framework ([Automata Class](https://github.com/syall/automata-gen/blob/master/src/automata.ts)) to generate Cellular Automata, including timing, size of the universe, maximum iterations, and more.
 
@@ -28,15 +28,25 @@ or using yarn:
 yarn add automata-gen
 ~~~
 
+## Usage
+
+To create an [`Automata`](https://automata-gen.syall.work/classes/_automata_.automata.html), three objects need to be defined:
+
+* [`InitialRules`](https://automata-gen.syall.work/interfaces/_automata_types_.initialrules.html): The initial state of the automata with defined size (rows and columns) coupled with probability weights for cells or a two-dimensional array already populated.
+* StateRules, an array of [`Rules`](https://automata-gen.syall.work/modules/_automata_types_.html#rule): The state transition function for a cell given information about neighbors and the cell's previous state, formatted `(nbInfo, prev) => ...`.
+* [`RunningRules`](https://automata-gen.syall.work/interfaces/_automata_types_.runningrules.html): The maximum number of iterations the automata should be run and the number of milliseconds between each iteration.
+
+Use the constructor `new Automata(initRules, stateRules, runningRules)` to create an instance, and then use the `generateGrid` method if a predefined grid was not passed into `initRules`. After that, use the `updateGrid` method to iterate a single step or use the `run` method to run the automata based on `runningRules`.
+
 ## Examples
 
-Demo of examples built in a React app can be found [here](https://automata-demo.syall.work/).
-
-The source code of the [Examples](https://github.com/syall/automata-gen/tree/master/examples):
+The source code of popular automata can be found in the [examples](https://github.com/syall/automata-gen/tree/master/examples):
 
 * [Conway's Game of Life](https://github.com/syall/automata-gen/blob/master/examples/gameOfLife.ts)
 * [Forest Fire](https://github.com/syall/automata-gen/blob/master/examples/forestFire.ts)
 * [Wire World](https://github.com/syall/automata-gen/blob/master/examples/wireWorld.ts)
+
+A Demo of these examples built in a React app can be found [here](https://automata-demo.syall.work/).
 
 ## Documentation
 
